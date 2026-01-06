@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс по трейдингу - Выбери свой путь к прибыли</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Трейдинг Pro</div>
+            <div>
+                <a href="#features">Что внутри</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#testimonials">Отзывы</a>
+                <button class="cta-button" onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })">Выбрать курс</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Стань прибыльным трейдером</h1>
+            <p>Получи структурированные знания, персональную обратную связь и готовые стратегии для торговли на любом рынке. Более 1500 учеников уже зарабатывают</p>
+            <button class="cta-button" style="font-size: 1.3rem; padding: 18px 40px;" onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })">Смотреть тарифы ⭐</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Что ты получишь</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>📚 20+ видеоуроков</h3>
+                    <p>Полный курс по техническому анализу, Price Action и психологии трейдера с практическими примерами</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Готовые стратегии</h3>
+                    <p>Индикаторы, настройки, правила входа/выхода с примерами реальных сделок и разборами ошибок</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📝 Практика с проверкой</h3>
+                    <p>Домашние задания, разборы сделок, чек-листы перед каждой сделкой и личная обратная связь</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👥 Закрытое комьюнити</h3>
+                    <p>Чаты учеников, еженедельные разборы, личная поддержка и доступ к эксклюзивным материалам</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Выбери свой тариф</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #666;">
+                <strong>СТАНДАРТ</strong> — самый популярный выбор 73% учеников
+            </p>
+
+            <div class="pricing-container">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>БАЗОВЫЙ</h3>
+                        <div class="price">25 000 ₽ <span class="discount">15 000 ₽</span></div>
+                        <small>Для самостоятельных с дисциплиной</small>
+                    </div>
+                    <ul class="features-list">
+                        <li class="included">✅ Все видеоуроки (15-20 шт)</li>
+                        <li class="included">✅ Чек-листы и шаблоны</li>
+                        <li class="included">✅ Доступ 3 месяца</li>
+                        <li class="included">✅ Тесты для самопроверки</li>
+                        <li class="included">✅ Чат выпускников (просмотр)</li>
+                        <li class="excluded">❌ Без проверки ДЗ</li>
+                        <li class="excluded">❌ Без личной обратной связи</li>
+                    </ul>
+                    <button class="cta-button buy-button">Купить базовый</button>
+                </div>
+
+                <!-- Standard Plan (Popular) -->
+                <div class="pricing-card popular">
+                    <div class="card-header">
+                        <h3>СТАНДАРТ ⭐</h3>
+                        <div class="price">40 000 ₽ <span class="discount">24 000 ₽</span></div>
+                        <small>Оптимальный выбор для результата</small>
+                        <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; margin-top: 0.5rem; border-radius: 4px; font-weight: bold;">
+                            Самый популярный (73% учеников)
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li class="included">✅ Всё из БАЗОВОГО</li>
+                        <li class="included">✅ Бонусные модули (психология, крипта)</li>
+                        <li class="included">✅ Проверка ВСЕХ ДЗ</li>
+                        <li class="included">✅ Доступ НАВСЕГДА</li>
+                        <li class="included">✅ Еженедельные вебинары (4-6)</li>
+                        <li class="included">✅ Групповые разборы сделок</li>
+                        <li class="included">✅ Личный чат с поддержкой 24-48ч</li>
+                        <li class="included">✅ Сертификат + стратегии</li>
+                    </ul>
+                    <button class="cta-button buy-button" style="background: #28a745;">Купить стандарт</button>
+                </div>
+
+                <!-- VIP Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>VIP/ПРЕМИУМ</h3>
+                        <div class="price">65 000 ₽ <span class="discount">39 000 ₽</span></div>
+                        <small><strong>Только 5 мест!</strong></small>
+                    </div>
+                    <ul class="features-list">
+                        <li class="included">✅ Всё из СТАНДАРТА</li>
+                        <li class="included">✅ 3-5 личных созвонов</li>
+                        <li class="included">✅ Разбор КАЖДОЙ твоей сделки</li>
+                        <li class="included">✅ VIP-чат (5-10 чел)</li>
+                        <li class="included">✅ Эксклюзивные мастер-классы</li>
+                        <li class="included">✅ Персональный план развития</li>
+                        <li class="included">✅ Постподдержка 2-4 недели</li>
+                        <li class="included">✅ Пожизненный доступ к обновлениям</li>
+                        <li class="included">✅ Гарантия результата</li>
+                    </ul>
+                    <button class="cta-button buy-button" style="background: #1e3c72;">Забронировать VIP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 style="color: white;">Результаты учеников</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"СТАНДАРТ тариф дал мне систему! Первая прибыль через 3 недели +15% за месяц. Спасибо за структурированный подход!"</p>
+                    <strong>— Алексей К., +15% за месяц</strong>
+                </div>
+                <div class="testimonial">
+                    <p>"VIP созвоны изменили всё. Теперь торгую по своим сетапам с R:R 1:3. Результат превзошел ожидания!"</p>
+                    <strong>— Мария С., +28% за 2 месяца</strong>
+                </div>
+                <div class="testimonial">
+                    <p>"Базовый тариф за 15к дал базу лучше, чем платные курсы за 100к! Рекомендую всем начинающим трейдерам."</p>
+                    <strong>— Дмитрий П., первый профит</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="cta">
+        <div class="container">
+            <h2>Готов начать?</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">Скидка 40% действует только эту неделю. Не пропусти!</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="cta-button" style="padding: 18px 40px; font-size: 1.3rem;">СТАНДАРТ 24 000₽ ⭐</button>
+                <button class="cta-button" style="padding: 18px 40px; font-size: 1.3rem;">VIP 39 000₽ (5 мест)</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate cards on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        // Observe all cards for animation
+        document.querySelectorAll('.pricing-card, .feature-card, .testimonial').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
